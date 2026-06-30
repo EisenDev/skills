@@ -5,6 +5,8 @@ category: workflow
 author: Zeraynce Engineering
 dependencies: ["systematic-debugging", "root-cause-analysis", "logging"]
 description: Standardized investigate production issue module.
+metadata:
+  short-description: "Standardized Investigate Production Issue module."
 ---
 
 # Investigate Production Issue Workflow

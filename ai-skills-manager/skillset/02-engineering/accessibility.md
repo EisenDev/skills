@@ -5,6 +5,8 @@ category: engineering
 author: Zeraynce Engineering
 dependencies: []
 description: Standardized accessibility module.
+metadata:
+  short-description: "Standardized Accessibility module."
 ---
 
 # Accessibility Standards

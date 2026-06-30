@@ -5,6 +5,8 @@ category: agent
 author: Zeraynce Engineering
 dependencies: []
 description: Standardized fullstack engineer module.
+metadata:
+  short-description: "Standardized Fullstack Engineer module."
 ---
 
 # Fullstack Engineer Persona

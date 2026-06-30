@@ -5,6 +5,8 @@ category: agent
 author: Zeraynce Engineering
 dependencies: []
 description: Standardized ui ux designer module.
+metadata:
+  short-description: "Standardized UI/UX Designer module."
 ---
 
 # UI/UX Designer Persona

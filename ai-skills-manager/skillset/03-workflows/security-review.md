@@ -5,6 +5,8 @@ category: workflow
 author: Zeraynce Engineering
 dependencies: ["security-first", "api-standards"]
 description: Standardized security review module.
+metadata:
+  short-description: "Standardized Security Review module."
 ---
 
 # Security Review Workflow

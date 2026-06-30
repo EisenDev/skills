@@ -50,42 +50,125 @@ graph TD
 
 ## Supported CLIs
 
-| CLI Platform | Supported | Skill Directory Location | Install Mode | Notes / Graceful Failures |
+| CLI Platform | Supported | Skill Directory Location | Install Mode | Notes |
 | :--- | :---: | :--- | :--- | :--- |
 | **Antigravity CLI (AGY)** | **Yes** | `~/.gemini/config/skills` | Symlink | Installs skills as nested `skills/<skill_id>/SKILL.md` targets. |
-| **Claude Code** | *No* | N/A | Unsupported | Informs user that settings belong in `~/.claude.json`. |
-| **Codex CLI** | *No* | N/A | Unsupported | Informs user that Codex uses JS/TS plugin config structures. |
-| **Gemini CLI** | *No* | N/A | Unsupported | Custom prompts should be passed inline or via environment options. |
-| **Cursor CLI** | *No* | N/A | Unsupported | Prompts are managed via IDE settings ('Rules for AI'). |
+| **OpenAI Codex CLI** | **Yes** | `~/.codex/AGENTS.md` | Concat | Appends all skills into a single `AGENTS.md` with `<!-- skill:id -->` delimiters for idempotent updates and removal. |
+| **Claude Code** | *No* | N/A | Unsupported | Settings belong in `~/.claude.json`. |
+| **Gemini CLI** | *No* | N/A | Unsupported | Custom prompts passed inline or via environment options. |
+| **Cursor CLI** | *No* | N/A | Unsupported | Prompts managed via IDE settings ('Rules for AI').  |
 
 ---
 
 ## Examples
 
-### Install skills to Antigravity CLI (AGY):
+### Linux / macOS (Bash)
+
 ```bash
+# Install skills to Antigravity CLI (AGY)
 ./install-skills.sh --agy
-```
 
-### Install skills with dry-run verification:
-```bash
+# Dry-run simulation
 ./install-skills.sh --agy --dry-run
-```
 
-### Update and synchronize skills:
-```bash
+# Update and synchronize skills
 ./update-skills.sh --agy
-```
 
-### Run framework doctor health check:
-```bash
+# Run framework doctor health check
 ./doctor.sh
-```
 
-### List skills grouped by category:
-```bash
+# List skills grouped by category
 ./list-skills.sh
 ```
+
+---
+
+## Windows
+
+Two Windows-native scripts are provided to replace the Linux `install-skills.sh`.
+
+### Prerequisites (Windows)
+
+1. **Python 3** — Install from [python.org](https://www.python.org/downloads/). Ensure it is on `PATH`.
+2. **PyYAML** — Install the YAML parser:
+   ```powershell
+   pip install pyyaml
+   ```
+
+---
+
+### Option A — Windows PowerShell
+
+Open **PowerShell** (or Windows Terminal) and run:
+
+```powershell
+# Navigate to the project folder
+cd C:\Users\<you>\Downloads\Gravityx2\skills\ai-skills-manager
+
+# Allow local scripts (one-time, if needed)
+Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
+
+# Install skills to AGY
+.\install-skills.ps1 -Agy
+
+# Install with verbose output
+.\install-skills.ps1 -Agy -Verbose
+
+# Dry-run simulation
+.\install-skills.ps1 -Agy -DryRun
+
+# Force overwrite all existing skill files
+.\install-skills.ps1 -Agy -Force
+
+# Auto-detect all CLIs and install
+.\install-skills.ps1 -All
+
+# View help
+.\install-skills.ps1 -Help
+```
+
+---
+
+### Option B — Git Bash (MINGW64 / MSYS2)
+
+Open **Git Bash** and run:
+
+```bash
+# Navigate to the project folder
+cd ~/Downloads/Gravityx2/skills/ai-skills-manager
+
+# Make executable (first time only)
+chmod +x install-skills-gitbash.sh
+
+# Install skills to AGY
+./install-skills-gitbash.sh --agy
+
+# Dry-run simulation
+./install-skills-gitbash.sh --agy --dry-run
+
+# Verbose output
+./install-skills-gitbash.sh --agy --verbose
+
+# Force overwrite
+./install-skills-gitbash.sh --agy --force
+
+# Auto-detect all CLIs
+./install-skills-gitbash.sh --all
+```
+
+> **Why not use `install-skills.sh` directly on Git Bash?**
+> Git Bash (MINGW64) translates paths like `/c/Users/...` internally, but Python on Windows
+> cannot open files using those POSIX-style paths. `install-skills-gitbash.sh` uses `cygpath`
+> (or a `sed` fallback) to convert paths to Windows format (`C:\Users\...`) before passing
+> them to Python, fixing the `Manifest parsing failed: [Errno 2] No such file or directory` error.
+
+#### Windows Symlink Note
+
+Symlinks on Windows require either:
+- **Developer Mode** enabled in Windows Settings → Privacy & Security → For Developers, or
+- Running Git Bash / PowerShell **as Administrator**.
+
+If neither is available, both scripts automatically fall back to **file copy** mode with a warning.
 
 ---
 
@@ -151,6 +234,25 @@ When a workflow requires prerequisites (e.g. `create-ticket` depends on `systema
 ### Error: Circular Dependency Detected
 **Cause**: Skill A depends on Skill B, and Skill B depends on Skill A.
 **Fix**: Redesign the skills manifest to eliminate recursive loops.
+
+### Windows: `Manifest parsing failed: [Errno 2] No such file or directory`
+**Cause**: Running `install-skills.sh` directly in Git Bash (MINGW64). Git Bash expands
+paths like `/c/Users/...`, but Python on Windows cannot open those POSIX-style paths.
+**Fix**: Use `install-skills-gitbash.sh` (Git Bash) or `install-skills.ps1` (PowerShell) instead.
+
+### Windows: `running scripts is disabled on this system`
+**Cause**: PowerShell execution policy is blocking the script.
+**Fix**: Run once in PowerShell as Administrator:
+```powershell
+Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
+```
+
+### Windows: `pyyaml` not found
+**Cause**: Python is installed but PyYAML is missing.
+**Fix**:
+```powershell
+pip install pyyaml
+```
 
 ---
 

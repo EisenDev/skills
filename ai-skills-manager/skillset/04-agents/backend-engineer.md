@@ -5,6 +5,8 @@ category: agent
 author: Zeraynce Engineering
 dependencies: []
 description: Standardized backend engineer module.
+metadata:
+  short-description: "Standardized Backend Engineer module."
 ---
 
 # Backend Engineer Persona

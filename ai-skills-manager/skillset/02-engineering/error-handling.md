@@ -5,6 +5,8 @@ category: engineering
 author: Zeraynce Engineering
 dependencies: []
 description: Standardized error handling module.
+metadata:
+  short-description: "Standardized Error Handling module."
 ---
 
 # Error Handling Standards

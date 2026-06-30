@@ -5,6 +5,8 @@ category: core
 author: Zeraynce Engineering
 dependencies: []
 description: Standardized documentation first module.
+metadata:
+  short-description: "Standardized Documentation First module."
 ---
 
 # Documentation First

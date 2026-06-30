@@ -5,6 +5,8 @@ category: engineering
 author: Zeraynce Engineering
 dependencies: []
 description: Standardized dependency management module.
+metadata:
+  short-description: "Standardized Dependency Management module."
 ---
 
 # Dependency Management Standards

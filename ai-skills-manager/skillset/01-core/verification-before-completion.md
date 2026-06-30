@@ -5,6 +5,8 @@ category: core
 author: Zeraynce Engineering
 dependencies: []
 description: Standardized verification before completion module.
+metadata:
+  short-description: "Standardized Verification Before Completion module."
 ---
 
 # Verification Before Completion

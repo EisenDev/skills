@@ -5,6 +5,8 @@ category: agent
 author: Zeraynce Engineering
 dependencies: []
 description: Standardized software architect module.
+metadata:
+  short-description: "Standardized Software Architect module."
 ---
 
 # Software Architect Persona

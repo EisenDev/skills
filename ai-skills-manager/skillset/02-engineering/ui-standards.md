@@ -5,6 +5,8 @@ category: engineering
 author: Zeraynce Engineering
 dependencies: []
 description: Standardized ui standards module.
+metadata:
+  short-description: "Standardized UI Standards module."
 ---
 
 # UI Standards

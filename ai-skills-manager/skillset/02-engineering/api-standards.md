@@ -5,6 +5,8 @@ category: engineering
 author: Zeraynce Engineering
 dependencies: []
 description: Standardized api standards module.
+metadata:
+  short-description: "Standardized API Standards module."
 ---
 
 # API Standards

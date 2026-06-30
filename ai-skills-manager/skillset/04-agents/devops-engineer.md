@@ -5,6 +5,8 @@ category: agent
 author: Zeraynce Engineering
 dependencies: []
 description: Standardized devops engineer module.
+metadata:
+  short-description: "Standardized Devops Engineer module."
 ---
 
 # DevOps Engineer Persona

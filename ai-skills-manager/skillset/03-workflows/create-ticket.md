@@ -5,6 +5,8 @@ category: workflow
 author: Zeraynce Engineering
 dependencies: ["documentation-first", "testing-first", "quality-gates", "systematic-debugging"]
 description: Standardized Create Ticket module.
+metadata:
+  short-description: "Standardized Create Ticket module."
 ---
 
 # Create Ticket Workflow

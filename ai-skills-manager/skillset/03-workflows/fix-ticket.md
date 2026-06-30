@@ -5,6 +5,8 @@ category: workflow
 author: Zeraynce Engineering
 dependencies: ["systematic-debugging", "root-cause-analysis", "testing-first", "architecture-thinking", "verification-before-completion"]
 description: Standardized Fix Ticket module.
+metadata:
+  short-description: "Standardized Fix Ticket module."
 ---
 
 # Fix Ticket Workflow

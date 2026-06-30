@@ -5,6 +5,8 @@ category: core
 author: Zeraynce Engineering
 dependencies: []
 description: Standardized testing first module.
+metadata:
+  short-description: "Standardized Testing First module."
 ---
 
 # Testing First

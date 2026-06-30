@@ -5,6 +5,8 @@ category: engineering
 author: Zeraynce Engineering
 dependencies: []
 description: Standardized performance module.
+metadata:
+  short-description: "Standardized Performance module."
 ---
 
 # Performance Standards

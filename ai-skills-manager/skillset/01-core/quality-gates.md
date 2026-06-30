@@ -5,6 +5,8 @@ category: core
 author: Zeraynce Engineering
 dependencies: []
 description: Standardized quality gates module.
+metadata:
+  short-description: "Standardized Quality Gates module."
 ---
 
 # Quality Gates

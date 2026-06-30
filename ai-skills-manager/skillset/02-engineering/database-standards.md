@@ -5,6 +5,8 @@ category: engineering
 author: Zeraynce Engineering
 dependencies: []
 description: Standardized database standards module.
+metadata:
+  short-description: "Standardized Database Standards module."
 ---
 
 # Database Standards

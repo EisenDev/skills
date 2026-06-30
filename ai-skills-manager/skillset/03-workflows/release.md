@@ -5,6 +5,8 @@ category: workflow
 author: Zeraynce Engineering
 dependencies: ["quality-gates", "verification-before-completion"]
 description: Standardized release module.
+metadata:
+  short-description: "Standardized Release module."
 ---
 
 # Release Workflow

@@ -5,6 +5,8 @@ category: workflow
 author: Zeraynce Engineering
 dependencies: ["architecture-thinking", "security-first", "quality-gates"]
 description: Standardized code review module.
+metadata:
+  short-description: "Standardized Code Review module."
 ---
 
 # Code Review Workflow

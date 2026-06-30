@@ -87,7 +87,7 @@ sync_cli_skills() {
 
         # Determine target file path
         local installed_file
-        if [ "$cli" = "agy" ]; then
+        if [ "$cli" = "agy" ] || [ "$cli" = "codex" ]; then
             installed_file="${target_dir}/${skill_id}/SKILL.md"
         else
             installed_file="${target_dir}/${skill_id}.md"
@@ -137,12 +137,16 @@ sync_cli_skills() {
 
     # 2. Remove deleted skills loop
     local removed_count=0
-    if [ "$cli" = "agy" ]; then
-        # For AGY, target skills are folders
+    if [ "$cli" = "agy" ] || [ "$cli" = "codex" ]; then
+        # For AGY and Codex, target skills are folders containing SKILL.md
         for dir in "${target_dir}"/*; do
             if [ -d "$dir" ]; then
                 local skill_id
                 skill_id=$(basename "$dir")
+                # Skip hidden/system directories
+                if [[ "$skill_id" == .* ]]; then
+                    continue
+                fi
                 # Verify if it is in manifest
                 if [[ ! " ${manifest_skills} " =~ [[:space:]]${skill_id}[[:space:]] ]]; then
                     if dispatch_cli "$cli" remove_skill "$skill_id"; then

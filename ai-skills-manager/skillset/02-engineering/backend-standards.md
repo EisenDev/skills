@@ -5,6 +5,8 @@ category: engineering
 author: Zeraynce Engineering
 dependencies: []
 description: Standardized backend standards module.
+metadata:
+  short-description: "Standardized Backend Standards module."
 ---
 
 # Backend Standards

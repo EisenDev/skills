@@ -5,6 +5,8 @@ category: engineering
 author: Zeraynce Engineering
 dependencies: []
 description: Standardized documentation standards module.
+metadata:
+  short-description: "Standardized Documentation Standards module."
 ---
 
 # Documentation Standards

@@ -5,6 +5,8 @@ category: agent
 author: Zeraynce Engineering
 dependencies: []
 description: Standardized security engineer module.
+metadata:
+  short-description: "Standardized Security Engineer module."
 ---
 
 # Security Engineer Persona

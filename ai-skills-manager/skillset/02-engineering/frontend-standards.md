@@ -5,6 +5,8 @@ category: engineering
 author: Zeraynce Engineering
 dependencies: []
 description: Standardized frontend standards module.
+metadata:
+  short-description: "Standardized Frontend Standards module."
 ---
 
 # Frontend Standards

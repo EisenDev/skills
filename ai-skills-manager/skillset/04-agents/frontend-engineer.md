@@ -5,6 +5,8 @@ category: agent
 author: Zeraynce Engineering
 dependencies: []
 description: Standardized frontend engineer module.
+metadata:
+  short-description: "Standardized Frontend Engineer module."
 ---
 
 # Frontend Engineer Persona

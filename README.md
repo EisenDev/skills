@@ -38,11 +38,13 @@ The core skill package manager. Manages a library of modular AI skills organized
 cd ai-skills-manager
 chmod +x *.sh
 ./install-skills.sh --agy         # Install to Antigravity CLI
-./update-skills.sh --agy          # Sync changes
+./install-skills.sh --codex       # Install to Codex CLI (writes ~/.codex/AGENTS.md)
+./update-skills.sh --agy          # Sync changes for AGY
+./update-skills.sh --codex        # Sync changes for Codex
 ./validate-skills.sh              # Validate all skill files
 ```
 
-> **Windows users:** This requires Bash. Use **Git Bash**, **WSL**, or run via `wsl ./update-skills.sh --agy` from PowerShell.
+> **Windows users:** This requires Bash. Use **Git Bash**, **WSL**, or run via `wsl ./install-skills.sh --agy` from PowerShell.
 
 ---
 
@@ -195,7 +197,7 @@ When `fix-ticket` is invoked, AGY will:
 The shell scripts require Bash. Use **Git Bash**, **WSL**, or run via `wsl ./update-skills.sh --agy` from PowerShell/CMD.
 
 **Q: What CLIs are supported for skills?**  
-Currently only **Antigravity CLI (AGY)** is fully supported with symlink-based skill installation. Other CLIs (Claude Code, Codex, Gemini, Cursor) are detected but not yet supported.
+**Antigravity CLI (AGY)** is supported via symlink-based installation into `~/.gemini/config/skills/`. **OpenAI Codex CLI** is supported via concatenation into `~/.codex/AGENTS.md` — all skills are appended with idempotent `<!-- skill:id -->` delimiters. Claude Code, Gemini CLI, and Cursor are detected but not yet supported.
 
 **Q: How does the ClickUp MCP connect?**  
 The `ai-cli-mcp-installer` injects an SSE-based MCP server entry into each CLI's `mcp.json`. AGY then calls ClickUp tools (`clickup_create_task`, `clickup_filter_tasks`, `clickup_attach_task_file`, etc.) directly via that MCP connection.

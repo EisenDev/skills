@@ -5,6 +5,8 @@ category: workflow
 author: Zeraynce Engineering
 dependencies: ["api-standards", "documentation-first"]
 description: Standardized api design module.
+metadata:
+  short-description: "Standardized Api Design module."
 ---
 
 # API Design Workflow

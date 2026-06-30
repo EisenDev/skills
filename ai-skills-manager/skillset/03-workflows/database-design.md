@@ -5,6 +5,8 @@ category: workflow
 author: Zeraynce Engineering
 dependencies: ["database-standards", "architecture-thinking"]
 description: Standardized database design module.
+metadata:
+  short-description: "Standardized Database Design module."
 ---
 
 # Database Design Workflow

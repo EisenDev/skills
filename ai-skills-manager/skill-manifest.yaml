@@ -14,6 +14,7 @@ skills:
       - fix-ticket
     supported_clis:
       - agy
+      - codex
     install_mode: symlink
   - id: documentation-first
     name: "Documentation First"
@@ -29,6 +30,7 @@ skills:
       - create-ticket
     supported_clis:
       - agy
+      - codex
     install_mode: symlink
   - id: quality-gates
     name: "Quality Gates"
@@ -44,6 +46,7 @@ skills:
       - release
     supported_clis:
       - agy
+      - codex
     install_mode: symlink
   - id: root-cause-analysis
     name: "Root Cause Analysis"
@@ -58,6 +61,7 @@ skills:
       - investigate-production-issue
     supported_clis:
       - agy
+      - codex
     install_mode: symlink
   - id: security-first
     name: "Security First"
@@ -73,6 +77,7 @@ skills:
       - security-review
     supported_clis:
       - agy
+      - codex
     install_mode: symlink
   - id: systematic-debugging
     name: "Systematic Debugging"
@@ -88,6 +93,7 @@ skills:
       - investigate-production-issue
     supported_clis:
       - agy
+      - codex
     install_mode: symlink
   - id: testing-first
     name: "Testing First"
@@ -103,6 +109,7 @@ skills:
       - fix-ticket
     supported_clis:
       - agy
+      - codex
     install_mode: symlink
   - id: verification-before-completion
     name: "Verification Before Completion"
@@ -119,6 +126,7 @@ skills:
       - release
     supported_clis:
       - agy
+      - codex
     install_mode: symlink
   - id: accessibility
     name: "Accessibility"
@@ -131,6 +139,7 @@ skills:
     required_by: []
     supported_clis:
       - agy
+      - codex
     install_mode: symlink
   - id: api-standards
     name: "API Standards"
@@ -145,6 +154,7 @@ skills:
       - security-review
     supported_clis:
       - agy
+      - codex
     install_mode: symlink
   - id: backend-standards
     name: "Backend Standards"
@@ -157,6 +167,7 @@ skills:
     required_by: []
     supported_clis:
       - agy
+      - codex
     install_mode: symlink
   - id: coding-style
     name: "Coding Style"
@@ -169,6 +180,7 @@ skills:
     required_by: []
     supported_clis:
       - agy
+      - codex
     install_mode: symlink
   - id: database-standards
     name: "Database Standards"
@@ -182,6 +194,7 @@ skills:
       - database-design
     supported_clis:
       - agy
+      - codex
     install_mode: symlink
   - id: dependency-management
     name: "Dependency Management"
@@ -194,6 +207,7 @@ skills:
     required_by: []
     supported_clis:
       - agy
+      - codex
     install_mode: symlink
   - id: docker-standards
     name: "Docker Standards"
@@ -207,6 +221,7 @@ skills:
       - deployment
     supported_clis:
       - agy
+      - codex
     install_mode: symlink
   - id: documentation-standards
     name: "Documentation Standards"
@@ -219,6 +234,7 @@ skills:
     required_by: []
     supported_clis:
       - agy
+      - codex
     install_mode: symlink
   - id: error-handling
     name: "Error Handling"
@@ -231,6 +247,7 @@ skills:
     required_by: []
     supported_clis:
       - agy
+      - codex
     install_mode: symlink
   - id: frontend-standards
     name: "Frontend Standards"
@@ -243,6 +260,7 @@ skills:
     required_by: []
     supported_clis:
       - agy
+      - codex
     install_mode: symlink
   - id: gitflow
     name: "Gitflow"
@@ -255,6 +273,7 @@ skills:
     required_by: []
     supported_clis:
       - agy
+      - codex
     install_mode: symlink
   - id: logging
     name: "Logging"
@@ -268,6 +287,7 @@ skills:
       - investigate-production-issue
     supported_clis:
       - agy
+      - codex
     install_mode: symlink
   - id: performance
     name: "Performance"
@@ -280,6 +300,7 @@ skills:
     required_by: []
     supported_clis:
       - agy
+      - codex
     install_mode: symlink
   - id: ui-standards
     name: "UI Standards"
@@ -292,6 +313,7 @@ skills:
     required_by: []
     supported_clis:
       - agy
+      - codex
     install_mode: symlink
   - id: api-design
     name: "Api Design"
@@ -306,6 +328,7 @@ skills:
     required_by: []
     supported_clis:
       - agy
+      - codex
     install_mode: symlink
   - id: code-review
     name: "Code Review"
@@ -321,6 +344,7 @@ skills:
     required_by: []
     supported_clis:
       - agy
+      - codex
     install_mode: symlink
   - id: create-feature
     name: "Create Feature"
@@ -338,6 +362,7 @@ skills:
     required_by: []
     supported_clis:
       - agy
+      - codex
     install_mode: symlink
   - id: create-ticket
     name: "Create Ticket"
@@ -354,6 +379,7 @@ skills:
     required_by: []
     supported_clis:
       - agy
+      - codex
     install_mode: symlink
   - id: database-design
     name: "Database Design"
@@ -368,6 +394,7 @@ skills:
     required_by: []
     supported_clis:
       - agy
+      - codex
     install_mode: symlink
   - id: deployment
     name: "Deployment"
@@ -382,6 +409,7 @@ skills:
     required_by: []
     supported_clis:
       - agy
+      - codex
     install_mode: symlink
   - id: fix-ticket
     name: "Fix Ticket"
@@ -399,6 +427,7 @@ skills:
     required_by: []
     supported_clis:
       - agy
+      - codex
     install_mode: symlink
   - id: investigate-production-issue
     name: "Investigate Production Issue"
@@ -414,6 +443,7 @@ skills:
     required_by: []
     supported_clis:
       - agy
+      - codex
     install_mode: symlink
   - id: release
     name: "Release"
@@ -428,6 +458,7 @@ skills:
     required_by: []
     supported_clis:
       - agy
+      - codex
     install_mode: symlink
   - id: security-review
     name: "Security Review"
@@ -442,6 +473,7 @@ skills:
     required_by: []
     supported_clis:
       - agy
+      - codex
     install_mode: symlink
   - id: backend-engineer
     name: "Backend Engineer"
@@ -454,6 +486,7 @@ skills:
     required_by: []
     supported_clis:
       - agy
+      - codex
     install_mode: symlink
   - id: devops-engineer
     name: "Devops Engineer"
@@ -466,6 +499,7 @@ skills:
     required_by: []
     supported_clis:
       - agy
+      - codex
     install_mode: symlink
   - id: frontend-engineer
     name: "Frontend Engineer"
@@ -478,6 +512,7 @@ skills:
     required_by: []
     supported_clis:
       - agy
+      - codex
     install_mode: symlink
   - id: fullstack-engineer
     name: "Fullstack Engineer"
@@ -490,6 +525,7 @@ skills:
     required_by: []
     supported_clis:
       - agy
+      - codex
     install_mode: symlink
   - id: qa-engineer
     name: "QA Engineer"
@@ -502,6 +538,7 @@ skills:
     required_by: []
     supported_clis:
       - agy
+      - codex
     install_mode: symlink
   - id: security-engineer
     name: "Security Engineer"
@@ -514,6 +551,7 @@ skills:
     required_by: []
     supported_clis:
       - agy
+      - codex
     install_mode: symlink
   - id: software-architect
     name: "Software Architect"
@@ -526,6 +564,7 @@ skills:
     required_by: []
     supported_clis:
       - agy
+      - codex
     install_mode: symlink
   - id: technical-writer
     name: "Technical Writer"
@@ -538,6 +577,7 @@ skills:
     required_by: []
     supported_clis:
       - agy
+      - codex
     install_mode: symlink
   - id: ui-ux-designer
     name: "UI/UX Designer"
@@ -550,4 +590,5 @@ skills:
     required_by: []
     supported_clis:
       - agy
+      - codex
     install_mode: symlink

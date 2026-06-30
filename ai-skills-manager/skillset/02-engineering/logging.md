@@ -5,6 +5,8 @@ category: engineering
 author: Zeraynce Engineering
 dependencies: []
 description: Standardized logging module.
+metadata:
+  short-description: "Standardized Logging module."
 ---
 
 # Logging Standards

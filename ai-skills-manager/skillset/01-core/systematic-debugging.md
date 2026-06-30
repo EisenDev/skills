@@ -5,6 +5,8 @@ category: core
 author: Zeraynce Engineering
 dependencies: []
 description: Standardized systematic debugging module.
+metadata:
+  short-description: "Standardized Systematic Debugging module."
 ---
 
 # Systematic Debugging

@@ -5,6 +5,8 @@ category: engineering
 author: Zeraynce Engineering
 dependencies: []
 description: Standardized docker standards module.
+metadata:
+  short-description: "Standardized Docker Standards module."
 ---
 
 # Docker Standards

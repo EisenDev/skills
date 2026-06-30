@@ -5,6 +5,8 @@ category: agent
 author: Zeraynce Engineering
 dependencies: []
 description: Standardized technical writer module.
+metadata:
+  short-description: "Standardized Technical Writer module."
 ---
 
 # Technical Writer Persona

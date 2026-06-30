@@ -5,6 +5,8 @@ category: workflow
 author: Zeraynce Engineering
 dependencies: ["docker-standards", "verification-before-completion"]
 description: Standardized deployment module.
+metadata:
+  short-description: "Standardized Deployment module."
 ---
 
 # Deployment Workflow

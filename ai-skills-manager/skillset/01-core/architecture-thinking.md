@@ -5,6 +5,8 @@ category: core
 author: Zeraynce Engineering
 dependencies: []
 description: Standardized architecture thinking module.
+metadata:
+  short-description: "Standardized Architecture Thinking module."
 ---
 
 # Architecture Thinking

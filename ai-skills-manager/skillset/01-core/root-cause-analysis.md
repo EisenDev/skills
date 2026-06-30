@@ -5,6 +5,8 @@ category: core
 author: Zeraynce Engineering
 dependencies: []
 description: Standardized root cause analysis module.
+metadata:
+  short-description: "Standardized Root Cause Analysis module."
 ---
 
 # Root Cause Analysis

@@ -5,6 +5,8 @@ category: agent
 author: Zeraynce Engineering
 dependencies: []
 description: Standardized qa engineer module.
+metadata:
+  short-description: "Standardized QA Engineer module."
 ---
 
 # QA Engineer Persona

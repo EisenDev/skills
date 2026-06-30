@@ -5,6 +5,8 @@ category: engineering
 author: Zeraynce Engineering
 dependencies: []
 description: Standardized coding style module.
+metadata:
+  short-description: "Standardized Coding Style module."
 ---
 
 # Coding Style Standards

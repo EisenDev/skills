@@ -5,6 +5,8 @@ category: core
 author: Zeraynce Engineering
 dependencies: []
 description: Standardized security first module.
+metadata:
+  short-description: "Standardized Security First module."
 ---
 
 # Security First

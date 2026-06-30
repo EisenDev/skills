@@ -5,6 +5,8 @@ category: engineering
 author: Zeraynce Engineering
 dependencies: []
 description: Standardized gitflow module.
+metadata:
+  short-description: "Standardized Gitflow module."
 ---
 
 # Gitflow Standards

@@ -5,6 +5,8 @@ category: workflow
 author: Zeraynce Engineering
 dependencies: ["architecture-thinking", "documentation-first", "testing-first", "security-first", "verification-before-completion"]
 description: Standardized create feature module.
+metadata:
+  short-description: "Standardized Create Feature module."
 ---
 
 # Create Feature Workflow
