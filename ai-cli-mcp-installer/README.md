@@ -25,42 +25,113 @@ The installer automatically detects the following AI clients:
 
 ## Installation
 
-You can clone this repository to use the scripts directly:
+Clone this repository:
 
 ```bash
 git clone https://github.com/your-org/ai-cli-mcp-installer.git
 cd ai-cli-mcp-installer
+```
+
+---
+
+## Usage — Linux / macOS (Bash)
+
+```bash
 chmod +x setup_ai_mcp.sh uninstall_ai_mcp.sh
-```
 
-## Usage
-
-Run the setup script:
-
-```bash
+# Install ClickUp MCP for all detected CLIs
 ./setup_ai_mcp.sh
-```
 
-### Options
-
-- `--help` : Show help message
-- `--dry-run` : Run without modifying any files (preview mode)
-- `--force` : Force installation even if it's already configured
-- `--verbose` : Enable detailed debug logging
-
-Example:
-
-```bash
+# Preview without making changes
 ./setup_ai_mcp.sh --dry-run --verbose
-```
 
-### Uninstallation
+# Force reinstall even if already configured
+./setup_ai_mcp.sh --force
 
-To remove the ClickUp MCP server configuration:
+# Run diagnostics
+./setup_ai_mcp.sh --diagnose
 
-```bash
+# Uninstall
 ./uninstall_ai_mcp.sh
 ```
+
+---
+
+## Usage — Windows
+
+Two sets of Windows-native scripts are provided.
+
+### Prerequisites (Windows)
+
+1. **Python 3** — Install from [python.org](https://www.python.org/downloads/). Ensure it is on `PATH`.
+2. **Node.js + npx** — Required for the `mcp-remote` bridge. Install from [nodejs.org](https://nodejs.org/).
+
+---
+
+### Option A — Windows PowerShell
+
+Open **PowerShell** (or Windows Terminal) and run:
+
+```powershell
+# Allow local scripts (one-time, if needed)
+Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
+
+# Navigate to the project folder
+cd C:\Users\<you>\path\to\ai-cli-mcp-installer
+
+# Install ClickUp MCP for all detected CLIs
+.\setup_ai_mcp.ps1
+
+# Preview without making changes
+.\setup_ai_mcp.ps1 -DryRun -Verbose
+
+# Force reinstall even if already configured
+.\setup_ai_mcp.ps1 -Force
+
+# Run diagnostics
+.\setup_ai_mcp.ps1 -Diagnose
+
+# Uninstall
+.\uninstall_ai_mcp.ps1
+
+# Uninstall preview
+.\uninstall_ai_mcp.ps1 -DryRun
+```
+
+---
+
+### Option B — Git Bash (MINGW64 / MSYS2)
+
+Open **Git Bash** and run:
+
+```bash
+# Make executable (first time only)
+chmod +x setup_ai_mcp_gitbash.sh uninstall_ai_mcp_gitbash.sh
+
+# Install ClickUp MCP for all detected CLIs
+./setup_ai_mcp_gitbash.sh
+
+# Preview without making changes
+./setup_ai_mcp_gitbash.sh --dry-run --verbose
+
+# Force reinstall even if already configured
+./setup_ai_mcp_gitbash.sh --force
+
+# Run diagnostics
+./setup_ai_mcp_gitbash.sh --diagnose
+
+# Uninstall
+./uninstall_ai_mcp_gitbash.sh
+
+# Uninstall preview
+./uninstall_ai_mcp_gitbash.sh --dry-run
+```
+
+> **Why not use `setup_ai_mcp.sh` directly on Git Bash?**
+> Git Bash (MINGW64) expands `$HOME` as a POSIX path (`/c/Users/...`), but Python on
+> Windows requires Windows-style paths (`C:\Users\...`). The `*_gitbash.sh` scripts use
+> `cygpath` (or a `sed` fallback) to convert paths before any Python call, fixing the
+> `[Errno 2] No such file or directory` error when reading or writing config JSON files.
 
 ## How Detection Works
 
@@ -94,12 +165,30 @@ A: The script includes a safe Python 3 fallback to perform the JSON merge. If ne
 **Q: Are my configurations backed up?**  
 A: Yes! A timestamped backup file (e.g., `mcp.json.backup-YYYYMMDD-HHMMSS.json`) is created before any changes are made.
 
-**Q: Can I run this on macOS or Windows?**  
-A: This script was specifically designed and tested for Linux. It may work on macOS or WSL, but results are not guaranteed.
+**Q: Can I run this on macOS?**  
+A: The `.sh` scripts should work on macOS. Results are not guaranteed but the logic is portable bash.
+
+**Q: Can I run this on Windows?**  
+A: Yes — use `setup_ai_mcp.ps1` (PowerShell) or `setup_ai_mcp_gitbash.sh` (Git Bash). Do **not** run `setup_ai_mcp.sh` directly in Git Bash; it will fail with a Python path error.
 
 ## Troubleshooting
 
-Please see [docs/troubleshooting.md](docs/troubleshooting.md) for detailed help and debugging tips.
+Please see [docs/troubleshooting.md](docs/troubleshooting.md) for detailed help.
+
+### Windows: `[Errno 2] No such file or directory` (Git Bash)
+**Cause**: Running `setup_ai_mcp.sh` directly in Git Bash. Python cannot open MINGW64 POSIX paths.
+**Fix**: Use `./setup_ai_mcp_gitbash.sh` instead.
+
+### Windows: `running scripts is disabled on this system` (PowerShell)
+**Cause**: PowerShell execution policy is blocking the script.
+**Fix**:
+```powershell
+Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
+```
+
+### Windows: `npx` not found
+**Cause**: Node.js is not installed or not on PATH.
+**Fix**: Install from [nodejs.org](https://nodejs.org/) and restart the terminal.
 
 ## License
 
