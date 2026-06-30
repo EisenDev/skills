@@ -1,0 +1,22 @@
+{
+    "version": "1.0",
+    "project": {
+        "name": "ai-platform",
+        "description": "AGY AI Platform — skillset, workflow definitions, and MCP tooling infrastructure."
+    },
+    "clickup": {
+        "workspace": {
+            "name": "Arjay Escabas's Workspace",
+            "id": "90161675293"
+        },
+        "space": {
+            "name": "Space",
+            "id": "90167325641"
+        },
+        "folder": null,
+        "list": {
+            "name": "General Tasks",
+            "id": "901615603605"
+        }
+    }
+}

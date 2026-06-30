@@ -1,0 +1,553 @@
+skills:
+  - id: architecture-thinking
+    name: "Architecture Thinking"
+    version: 1.0.0
+    category: core
+    description: "Standardized Architecture Thinking module."
+    author: "Zeraynce Engineering"
+    directory: 01-core
+    dependencies: []
+    required_by:
+      - code-review
+      - create-feature
+      - database-design
+      - fix-ticket
+    supported_clis:
+      - agy
+    install_mode: symlink
+  - id: documentation-first
+    name: "Documentation First"
+    version: 1.0.0
+    category: core
+    description: "Standardized Documentation First module."
+    author: "Zeraynce Engineering"
+    directory: 01-core
+    dependencies: []
+    required_by:
+      - api-design
+      - create-feature
+      - create-ticket
+    supported_clis:
+      - agy
+    install_mode: symlink
+  - id: quality-gates
+    name: "Quality Gates"
+    version: 1.0.0
+    category: core
+    description: "Standardized Quality Gates module."
+    author: "Zeraynce Engineering"
+    directory: 01-core
+    dependencies: []
+    required_by:
+      - code-review
+      - create-ticket
+      - release
+    supported_clis:
+      - agy
+    install_mode: symlink
+  - id: root-cause-analysis
+    name: "Root Cause Analysis"
+    version: 1.0.0
+    category: core
+    description: "Standardized Root Cause Analysis module."
+    author: "Zeraynce Engineering"
+    directory: 01-core
+    dependencies: []
+    required_by:
+      - fix-ticket
+      - investigate-production-issue
+    supported_clis:
+      - agy
+    install_mode: symlink
+  - id: security-first
+    name: "Security First"
+    version: 1.0.0
+    category: core
+    description: "Standardized Security First module."
+    author: "Zeraynce Engineering"
+    directory: 01-core
+    dependencies: []
+    required_by:
+      - code-review
+      - create-feature
+      - security-review
+    supported_clis:
+      - agy
+    install_mode: symlink
+  - id: systematic-debugging
+    name: "Systematic Debugging"
+    version: 1.0.0
+    category: core
+    description: "Standardized Systematic Debugging module."
+    author: "Zeraynce Engineering"
+    directory: 01-core
+    dependencies: []
+    required_by:
+      - create-ticket
+      - fix-ticket
+      - investigate-production-issue
+    supported_clis:
+      - agy
+    install_mode: symlink
+  - id: testing-first
+    name: "Testing First"
+    version: 1.0.0
+    category: core
+    description: "Standardized Testing First module."
+    author: "Zeraynce Engineering"
+    directory: 01-core
+    dependencies: []
+    required_by:
+      - create-feature
+      - create-ticket
+      - fix-ticket
+    supported_clis:
+      - agy
+    install_mode: symlink
+  - id: verification-before-completion
+    name: "Verification Before Completion"
+    version: 1.0.0
+    category: core
+    description: "Standardized Verification Before Completion module."
+    author: "Zeraynce Engineering"
+    directory: 01-core
+    dependencies: []
+    required_by:
+      - create-feature
+      - deployment
+      - fix-ticket
+      - release
+    supported_clis:
+      - agy
+    install_mode: symlink
+  - id: accessibility
+    name: "Accessibility"
+    version: 1.0.0
+    category: engineering
+    description: "Standardized Accessibility module."
+    author: "Zeraynce Engineering"
+    directory: 02-engineering
+    dependencies: []
+    required_by: []
+    supported_clis:
+      - agy
+    install_mode: symlink
+  - id: api-standards
+    name: "API Standards"
+    version: 1.0.0
+    category: engineering
+    description: "Standardized API Standards module."
+    author: "Zeraynce Engineering"
+    directory: 02-engineering
+    dependencies: []
+    required_by:
+      - api-design
+      - security-review
+    supported_clis:
+      - agy
+    install_mode: symlink
+  - id: backend-standards
+    name: "Backend Standards"
+    version: 1.0.0
+    category: engineering
+    description: "Standardized Backend Standards module."
+    author: "Zeraynce Engineering"
+    directory: 02-engineering
+    dependencies: []
+    required_by: []
+    supported_clis:
+      - agy
+    install_mode: symlink
+  - id: coding-style
+    name: "Coding Style"
+    version: 1.0.0
+    category: engineering
+    description: "Standardized Coding Style module."
+    author: "Zeraynce Engineering"
+    directory: 02-engineering
+    dependencies: []
+    required_by: []
+    supported_clis:
+      - agy
+    install_mode: symlink
+  - id: database-standards
+    name: "Database Standards"
+    version: 1.0.0
+    category: engineering
+    description: "Standardized Database Standards module."
+    author: "Zeraynce Engineering"
+    directory: 02-engineering
+    dependencies: []
+    required_by:
+      - database-design
+    supported_clis:
+      - agy
+    install_mode: symlink
+  - id: dependency-management
+    name: "Dependency Management"
+    version: 1.0.0
+    category: engineering
+    description: "Standardized Dependency Management module."
+    author: "Zeraynce Engineering"
+    directory: 02-engineering
+    dependencies: []
+    required_by: []
+    supported_clis:
+      - agy
+    install_mode: symlink
+  - id: docker-standards
+    name: "Docker Standards"
+    version: 1.0.0
+    category: engineering
+    description: "Standardized Docker Standards module."
+    author: "Zeraynce Engineering"
+    directory: 02-engineering
+    dependencies: []
+    required_by:
+      - deployment
+    supported_clis:
+      - agy
+    install_mode: symlink
+  - id: documentation-standards
+    name: "Documentation Standards"
+    version: 1.0.0
+    category: engineering
+    description: "Standardized Documentation Standards module."
+    author: "Zeraynce Engineering"
+    directory: 02-engineering
+    dependencies: []
+    required_by: []
+    supported_clis:
+      - agy
+    install_mode: symlink
+  - id: error-handling
+    name: "Error Handling"
+    version: 1.0.0
+    category: engineering
+    description: "Standardized Error Handling module."
+    author: "Zeraynce Engineering"
+    directory: 02-engineering
+    dependencies: []
+    required_by: []
+    supported_clis:
+      - agy
+    install_mode: symlink
+  - id: frontend-standards
+    name: "Frontend Standards"
+    version: 1.0.0
+    category: engineering
+    description: "Standardized Frontend Standards module."
+    author: "Zeraynce Engineering"
+    directory: 02-engineering
+    dependencies: []
+    required_by: []
+    supported_clis:
+      - agy
+    install_mode: symlink
+  - id: gitflow
+    name: "Gitflow"
+    version: 1.0.0
+    category: engineering
+    description: "Standardized Gitflow module."
+    author: "Zeraynce Engineering"
+    directory: 02-engineering
+    dependencies: []
+    required_by: []
+    supported_clis:
+      - agy
+    install_mode: symlink
+  - id: logging
+    name: "Logging"
+    version: 1.0.0
+    category: engineering
+    description: "Standardized Logging module."
+    author: "Zeraynce Engineering"
+    directory: 02-engineering
+    dependencies: []
+    required_by:
+      - investigate-production-issue
+    supported_clis:
+      - agy
+    install_mode: symlink
+  - id: performance
+    name: "Performance"
+    version: 1.0.0
+    category: engineering
+    description: "Standardized Performance module."
+    author: "Zeraynce Engineering"
+    directory: 02-engineering
+    dependencies: []
+    required_by: []
+    supported_clis:
+      - agy
+    install_mode: symlink
+  - id: ui-standards
+    name: "UI Standards"
+    version: 1.0.0
+    category: engineering
+    description: "Standardized UI Standards module."
+    author: "Zeraynce Engineering"
+    directory: 02-engineering
+    dependencies: []
+    required_by: []
+    supported_clis:
+      - agy
+    install_mode: symlink
+  - id: api-design
+    name: "Api Design"
+    version: 1.0.0
+    category: workflow
+    description: "Standardized Api Design module."
+    author: "Zeraynce Engineering"
+    directory: 03-workflows
+    dependencies:
+      - api-standards
+      - documentation-first
+    required_by: []
+    supported_clis:
+      - agy
+    install_mode: symlink
+  - id: code-review
+    name: "Code Review"
+    version: 1.0.0
+    category: workflow
+    description: "Standardized Code Review module."
+    author: "Zeraynce Engineering"
+    directory: 03-workflows
+    dependencies:
+      - architecture-thinking
+      - security-first
+      - quality-gates
+    required_by: []
+    supported_clis:
+      - agy
+    install_mode: symlink
+  - id: create-feature
+    name: "Create Feature"
+    version: 1.0.0
+    category: workflow
+    description: "Standardized Create Feature module."
+    author: "Zeraynce Engineering"
+    directory: 03-workflows
+    dependencies:
+      - architecture-thinking
+      - documentation-first
+      - testing-first
+      - security-first
+      - verification-before-completion
+    required_by: []
+    supported_clis:
+      - agy
+    install_mode: symlink
+  - id: create-ticket
+    name: "Create Ticket"
+    version: 1.0.0
+    category: workflow
+    description: "Standardized Create Ticket module."
+    author: "Zeraynce Engineering"
+    directory: 03-workflows
+    dependencies:
+      - documentation-first
+      - testing-first
+      - quality-gates
+      - systematic-debugging
+    required_by: []
+    supported_clis:
+      - agy
+    install_mode: symlink
+  - id: database-design
+    name: "Database Design"
+    version: 1.0.0
+    category: workflow
+    description: "Standardized Database Design module."
+    author: "Zeraynce Engineering"
+    directory: 03-workflows
+    dependencies:
+      - database-standards
+      - architecture-thinking
+    required_by: []
+    supported_clis:
+      - agy
+    install_mode: symlink
+  - id: deployment
+    name: "Deployment"
+    version: 1.0.0
+    category: workflow
+    description: "Standardized Deployment module."
+    author: "Zeraynce Engineering"
+    directory: 03-workflows
+    dependencies:
+      - docker-standards
+      - verification-before-completion
+    required_by: []
+    supported_clis:
+      - agy
+    install_mode: symlink
+  - id: fix-ticket
+    name: "Fix Ticket"
+    version: 1.0.0
+    category: workflow
+    description: "Standardized Fix Ticket module."
+    author: "Zeraynce Engineering"
+    directory: 03-workflows
+    dependencies:
+      - systematic-debugging
+      - root-cause-analysis
+      - testing-first
+      - architecture-thinking
+      - verification-before-completion
+    required_by: []
+    supported_clis:
+      - agy
+    install_mode: symlink
+  - id: investigate-production-issue
+    name: "Investigate Production Issue"
+    version: 1.0.0
+    category: workflow
+    description: "Standardized Investigate Production Issue module."
+    author: "Zeraynce Engineering"
+    directory: 03-workflows
+    dependencies:
+      - systematic-debugging
+      - root-cause-analysis
+      - logging
+    required_by: []
+    supported_clis:
+      - agy
+    install_mode: symlink
+  - id: release
+    name: "Release"
+    version: 1.0.0
+    category: workflow
+    description: "Standardized Release module."
+    author: "Zeraynce Engineering"
+    directory: 03-workflows
+    dependencies:
+      - quality-gates
+      - verification-before-completion
+    required_by: []
+    supported_clis:
+      - agy
+    install_mode: symlink
+  - id: security-review
+    name: "Security Review"
+    version: 1.0.0
+    category: workflow
+    description: "Standardized Security Review module."
+    author: "Zeraynce Engineering"
+    directory: 03-workflows
+    dependencies:
+      - security-first
+      - api-standards
+    required_by: []
+    supported_clis:
+      - agy
+    install_mode: symlink
+  - id: backend-engineer
+    name: "Backend Engineer"
+    version: 1.0.0
+    category: agent
+    description: "Standardized Backend Engineer module."
+    author: "Zeraynce Engineering"
+    directory: 04-agents
+    dependencies: []
+    required_by: []
+    supported_clis:
+      - agy
+    install_mode: symlink
+  - id: devops-engineer
+    name: "Devops Engineer"
+    version: 1.0.0
+    category: agent
+    description: "Standardized Devops Engineer module."
+    author: "Zeraynce Engineering"
+    directory: 04-agents
+    dependencies: []
+    required_by: []
+    supported_clis:
+      - agy
+    install_mode: symlink
+  - id: frontend-engineer
+    name: "Frontend Engineer"
+    version: 1.0.0
+    category: agent
+    description: "Standardized Frontend Engineer module."
+    author: "Zeraynce Engineering"
+    directory: 04-agents
+    dependencies: []
+    required_by: []
+    supported_clis:
+      - agy
+    install_mode: symlink
+  - id: fullstack-engineer
+    name: "Fullstack Engineer"
+    version: 1.0.0
+    category: agent
+    description: "Standardized Fullstack Engineer module."
+    author: "Zeraynce Engineering"
+    directory: 04-agents
+    dependencies: []
+    required_by: []
+    supported_clis:
+      - agy
+    install_mode: symlink
+  - id: qa-engineer
+    name: "QA Engineer"
+    version: 1.0.0
+    category: agent
+    description: "Standardized QA Engineer module."
+    author: "Zeraynce Engineering"
+    directory: 04-agents
+    dependencies: []
+    required_by: []
+    supported_clis:
+      - agy
+    install_mode: symlink
+  - id: security-engineer
+    name: "Security Engineer"
+    version: 1.0.0
+    category: agent
+    description: "Standardized Security Engineer module."
+    author: "Zeraynce Engineering"
+    directory: 04-agents
+    dependencies: []
+    required_by: []
+    supported_clis:
+      - agy
+    install_mode: symlink
+  - id: software-architect
+    name: "Software Architect"
+    version: 1.0.0
+    category: agent
+    description: "Standardized Software Architect module."
+    author: "Zeraynce Engineering"
+    directory: 04-agents
+    dependencies: []
+    required_by: []
+    supported_clis:
+      - agy
+    install_mode: symlink
+  - id: technical-writer
+    name: "Technical Writer"
+    version: 1.0.0
+    category: agent
+    description: "Standardized Technical Writer module."
+    author: "Zeraynce Engineering"
+    directory: 04-agents
+    dependencies: []
+    required_by: []
+    supported_clis:
+      - agy
+    install_mode: symlink
+  - id: ui-ux-designer
+    name: "UI/UX Designer"
+    version: 1.0.0
+    category: agent
+    description: "Standardized UI/UX Designer module."
+    author: "Zeraynce Engineering"
+    directory: 04-agents
+    dependencies: []
+    required_by: []
+    supported_clis:
+      - agy
+    install_mode: symlink
